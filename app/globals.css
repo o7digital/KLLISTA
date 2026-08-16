@@ -17,6 +17,7 @@
 
 html {
   scroll-behavior: smooth;
+  overflow-x: clip;
 }
 
 body {
@@ -24,11 +25,17 @@ body {
   background: var(--cream);
   color: var(--ink);
   font-family: var(--sans);
-  overflow-x: hidden;
+  width: 100%;
+  overflow-x: clip;
 }
 
 img {
   max-width: 100%;
+}
+
+main {
+  width: 100%;
+  overflow-x: clip;
 }
 
 a {
@@ -38,6 +45,7 @@ a {
 
 .shell {
   width: min(1280px, calc(100% - 64px));
+  max-width: 100%;
   margin-inline: auto;
 }
 
@@ -852,7 +860,7 @@ h2 i {
 
 @media (max-width: 900px) {
   .shell {
-    width: min(100% - 36px, 720px);
+    width: min(720px, calc(100% - 36px));
   }
 
   .topline {
@@ -947,6 +955,18 @@ h2 i {
 }
 
 @media (max-width: 520px) {
+  .ticker {
+    transform: none;
+  }
+
+  .ticker div {
+    gap: 20px;
+  }
+
+  .ticker-item {
+    gap: 20px;
+  }
+
   .topline {
     font-size: 8px;
   }
@@ -973,12 +993,15 @@ h2 i {
   }
 
   .round-sticker {
-    width: 100px;
-    height: 100px;
+    top: 14px;
+    right: 14px;
+    width: 92px;
+    height: 92px;
+    box-shadow: 4px 4px 0 var(--ink);
   }
 
   .round-sticker strong {
-    font-size: 28px;
+    font-size: 24px;
   }
 
   .section-heading h2,
@@ -998,6 +1021,7 @@ h2 i {
   .loyalty-card {
     min-height: 330px;
     padding: 24px;
+    transform: none;
     box-shadow: 8px 8px 0 var(--pink);
   }
 
