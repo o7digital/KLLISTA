@@ -11,8 +11,8 @@ export default function Home() {
       </div>
 
       <nav className="nav shell" aria-label="Navegación principal">
-        <a className="brand" href="#inicio" aria-label="KLLISTA, inicio">
-          KLLISTA<span>®</span>
+        <a className="brand" href="#inicio" aria-label="KALLISTA, inicio">
+          KALLISTA<span>®</span>
         </a>
         <div className="nav-links">
           {siteData.navigation.map((item) => (
@@ -49,12 +49,12 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="hero-art" aria-label="Bebidas y café KLLISTA sobre una mesa">
+        <div className="hero-art" aria-label="Bebidas y café KALLISTA sobre una mesa">
           <Image
             fill
             priority
             className="hero-image"
-            src="/kllista-hero.png"
+            src="/kallista-hero.png"
             alt={siteData.hero.imageAlt}
             sizes="(max-width: 900px) 100vw, 53vw"
           />
@@ -217,7 +217,7 @@ export default function Home() {
 
       <footer className="footer shell">
         <a className="brand footer-brand" href="#inicio">
-          KLLISTA<span>®</span>
+          KALLISTA<span>®</span>
         </a>
         <p>{siteData.footer.line1}</p>
         <p>{siteData.footer.line2}</p>

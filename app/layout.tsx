@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "KLLISTA Café Tacuba",
+  title: "KALLISTA Café Tacuba",
   description: "Café, matcha y algo rico en el corazón de Tacuba, CDMX.",
 };
 
