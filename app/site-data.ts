@@ -9,9 +9,9 @@ export const siteData = {
   ],
   navCta: "QUIERO IR",
   hero: {
-    eyebrow: "CAFÉ DE BARRIO · POPOTLA",
+    eyebrow: "KALLISTA CAFÉ · POPOTLA",
     title: ["VEN POR", "EL CAFÉ.", "QUÉDATE POR", "EL MOMENTO."],
-    intro: "Café rico, algo delicioso y un lugar para compartir, trabajar o simplemente disfrutar tu tiempo. Bienvenido a KALLISTA.",
+    intro: "Café rico, algo delicioso y un lugar para compartir, trabajar o simplemente disfrutar tu tiempo. Bienvenido a KALLISTA CAFÉ.",
     ctaPrimary: "CONOCE EL MENÚ", ctaSecondary: "CÓMO LLEGAR",
     artLabel: ["CAFÉ", "AMIGOS", "TIEMPO DE CALIDAD"], stickerTop: "HECHO CON", stickerBottom: "CARIÑO",
     mood: "SIÉNTETE EN CASA", imageAlt: "Café, bebida y pan dulce servidos en una mesa de KALLISTA Café",
@@ -19,9 +19,9 @@ export const siteData = {
   ticker: ["CAFÉ", "DESAYUNO", "WI-FI", "PET FRIENDLY", "AMIGOS", "EVENTOS", "TIEMPO DE CALIDAD"],
   about: {
     kicker: "CONÓCENOS",
-    title: ["SOMOS", "KALLISTA."],
-    lead: "Un café de barrio hecho para disfrutar lo cotidiano.",
-    body: "KALLISTA nace de una idea sencilla: las cosas más bellas suceden cuando tenemos tiempo para compartirlas. Por eso queremos crear un lugar vivo y cercano, donde una buena taza, algo rico y una conversación siempre tengan espacio.",
+    title: ["SOMOS", "KALLISTA CAFÉ."],
+    lead: "Un espacio cercano hecho para disfrutar lo cotidiano.",
+    body: "KALLISTA CAFÉ nace de una idea sencilla: las cosas más bellas suceden cuando tenemos tiempo para compartirlas. Por eso queremos crear un lugar vivo y cercano, donde una buena taza, algo rico y una conversación siempre tengan espacio.",
     signature: "Lo más bello está en compartir.",
     values: ["CAFÉ CON CARIÑO", "COMIDA PARA DISFRUTAR", "ESPACIO PARA TODXS"],
   },
@@ -30,15 +30,15 @@ export const siteData = {
     note: "Bebidas con personalidad, café bien hecho y algo delicioso para acompañar tu momento.",
     items: [
       { number: "01", name: "NUBE ROSA", detail: "Fresa · leche · espuma fría", price: "$72", className: "sky" },
-      { number: "02", name: "CAFÉ FRÍO KALLISTA", detail: "Café de altura · naranja", price: "$68", className: "coffee" },
+      { number: "02", name: "CAFÉ FRÍO DE KALLISTA CAFÉ", detail: "Café de altura · naranja", price: "$68", className: "coffee" },
       { number: "03", name: "MATCHA LIMÓN", detail: "Matcha · limón amarillo", price: "$75", className: "matcha" },
     ],
     footnote: "* Menú, productos y precios ilustrativos. Información final próximamente.",
   },
   place: {
     kicker: "TIEMPO DE CALIDAD", title: ["UN LUGAR PARA", "DISFRUTAR", "TU TIEMPO"],
-    body: "Ven a trabajar, compartir algo rico, encontrarte con amigos o hacer una pausa. KALLISTA quiere convertirse en ese lugar al que siempre tienes ganas de volver.",
-    origin: "KALLISTA nace de Kallisto: lo más bello. Para nosotros, está en los momentos que compartimos.",
+    body: "Ven a trabajar, compartir algo rico, encontrarte con amigos o hacer una pausa. KALLISTA CAFÉ quiere convertirse en ese lugar al que siempre tienes ganas de volver.",
+    origin: "El nombre KALLISTA CAFÉ nace de Kallisto: lo más bello. Para nosotros, está en los momentos que compartimos.",
     perks: [
       { icon: "⌁", label: "WI-FI" },
       { icon: "♡", label: "PET FRIENDLY" },
@@ -48,11 +48,11 @@ export const siteData = {
     ],
   },
   events: {
-    kicker: "LA COMUNIDAD SE ENCUENTRA", title: ["EVENTOS EN", "KALLISTA"], status: "PRÓXIMAMENTE", shortStatus: "PRONTO",
+    kicker: "LA COMUNIDAD SE ENCUENTRA", title: ["EVENTOS EN", "KALLISTA CAFÉ"], status: "PRÓXIMAMENTE", shortStatus: "PRONTO",
     description: "Estamos preparando encuentros para compartir, descubrir y pasarla bien juntos.", cta: "VER PRÓXIMOS EVENTOS",
   },
   club: {
-    brand: "KALLISTA\nCLUB", subtitle: "UNA COMUNIDAD\nQUE CRECE",
+    brand: "KALLISTA CAFÉ\nCLUB", subtitle: "UNA COMUNIDAD\nQUE CRECE",
     note: "PARA CLIENTES FRECUENTES · AMIGOS · EVENTOS", member: "PRÓXIMAMENTE",
     tagline: "VEN POR EL CAFÉ.\nVUELVE POR LA GENTE.",
   },
