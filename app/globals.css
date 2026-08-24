@@ -79,19 +79,24 @@ a {
   display: grid;
   grid-template-columns: 1fr auto 1fr;
   align-items: center;
+  position: relative;
+  overflow: visible;
   border-bottom: 1px solid var(--line);
 }
 
 .brand {
-  width: 74px;
-  height: 82px;
+  width: 96px;
+  height: 112px;
   display: grid;
   place-items: center;
+  position: relative;
+  z-index: 5;
+  transform: translateY(15px);
 }
 
 .brand-logo {
   width: auto;
-  height: 78px;
+  height: 105px;
   object-fit: contain;
   display: block;
 }
@@ -929,6 +934,7 @@ h2 i {
 .footer-brand {
   width: 82px;
   height: 104px;
+  transform: none;
 }
 
 .footer-brand .brand-logo {
@@ -967,12 +973,17 @@ h2 i {
   }
 
   .brand {
-    width: 66px;
-    height: 82px;
+    width: 88px;
+    height: 106px;
+    transform: translateY(13px);
   }
 
   .brand-logo {
-    height: 76px;
+    height: 102px;
+  }
+
+  .footer-brand {
+    transform: none;
   }
 
   .nav-links {
