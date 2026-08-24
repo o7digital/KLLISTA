@@ -11,8 +11,15 @@ export default function Home() {
       </div>
 
       <nav className="nav shell" aria-label="Navegación principal">
-        <a className="brand" href="#inicio" aria-label="KALLISTA, inicio">
-          KALLISTA<span>®</span>
+        <a className="brand" href="#inicio" aria-label="KALLISTA Café, inicio">
+          <Image
+            className="brand-logo"
+            src="/kallista-logo.png"
+            alt="KALLISTA Café"
+            width={290}
+            height={320}
+            priority
+          />
         </a>
         <div className="nav-links">
           {siteData.navigation.map((item) => (
@@ -32,11 +39,12 @@ export default function Home() {
             <span className="eyebrow-dot" /> {siteData.hero.eyebrow}
           </div>
           <h1>
-            {siteData.hero.title[0]}
-            <br />
-            {siteData.hero.title[1]}
-            <br />
-            <em>{siteData.hero.title[2]}</em>
+            {siteData.hero.title.map((line, index) => (
+              <span key={line}>
+                {index === siteData.hero.title.length - 1 ? <em>{line}</em> : line}
+                {index < siteData.hero.title.length - 1 && <br />}
+              </span>
+            ))}
           </h1>
           <p className="hero-intro">{siteData.hero.intro}</p>
           <div className="hero-actions">
@@ -125,7 +133,7 @@ export default function Home() {
         <p className="mockup-note">{siteData.menu.footnote}</p>
       </section>
 
-      <section className="spot-section" id="lugar">
+      <section className="spot-section" id="experiencia">
         <div className="spot-inner shell">
           <div className="spot-copy">
             <p className="kicker light">{siteData.place.kicker}</p>
@@ -135,9 +143,10 @@ export default function Home() {
               {siteData.place.title[1]} <i>{siteData.place.title[2]}</i>
             </h2>
             <p>{siteData.place.body}</p>
+            <p className="origin-note">{siteData.place.origin}</p>
             <div className="perks">
               {siteData.place.perks.map((perk) => (
-                <span key={perk}>{perk}</span>
+                <span key={perk.label}><b aria-hidden="true">{perk.icon}</b>{perk.label}</span>
               ))}
             </div>
           </div>
@@ -162,6 +171,29 @@ export default function Home() {
             </div>
           </div>
         </div>
+      </section>
+
+      <section className="events-section shell" id="eventos">
+        <div className="events-heading">
+          <p className="kicker">{siteData.events.kicker}</p>
+          <h2>
+            {siteData.events.title[0]}
+            <br />
+            <i>{siteData.events.title[1]}</i>
+          </h2>
+        </div>
+        <article className="event-card">
+          <div className="event-date" aria-hidden="true">
+            <span>✦</span>
+            <strong>PRONTO</strong>
+          </div>
+          <div className="event-copy">
+            <p>{siteData.events.status}</p>
+            <h3>{siteData.events.title.join(" ")}</h3>
+            <span>{siteData.events.description}</span>
+          </div>
+          <a href="#eventos">{siteData.events.cta} <span>↗</span></a>
+        </article>
       </section>
 
       <section className="visit shell" id="visitanos">
@@ -216,8 +248,14 @@ export default function Home() {
       </section>
 
       <footer className="footer shell">
-        <a className="brand footer-brand" href="#inicio">
-          KALLISTA<span>®</span>
+        <a className="brand footer-brand" href="#inicio" aria-label="KALLISTA Café, inicio">
+          <Image
+            className="brand-logo"
+            src="/kallista-logo.png"
+            alt="KALLISTA Café"
+            width={290}
+            height={320}
+          />
         </a>
         <p>{siteData.footer.line1}</p>
         <p>{siteData.footer.line2}</p>

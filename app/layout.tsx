@@ -1,9 +1,13 @@
 import type { Metadata } from "next";
+import { Fraunces, Manrope } from "next/font/google";
 import "./globals.css";
 
+const fraunces = Fraunces({ subsets: ["latin"], variable: "--font-display" });
+const manrope = Manrope({ subsets: ["latin"], variable: "--font-body" });
+
 export const metadata: Metadata = {
-  title: "KALLISTA Café Tacuba",
-  description: "Café, matcha y algo rico en el corazón de Tacuba, CDMX.",
+  title: "KALLISTA Café | Popotla, CDMX",
+  description: "Café rico, comida y tiempo de calidad en Mar Negro 204, Popotla, CDMX.",
 };
 
 export default function RootLayout({
@@ -13,7 +17,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="es">
-      <body>{children}</body>
+      <body className={`${fraunces.variable} ${manrope.variable}`}>{children}</body>
     </html>
   );
 }
