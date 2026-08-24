@@ -925,20 +925,20 @@ h2 i {
 }
 
 .footer {
-  min-height: 125px;
+  min-height: 160px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   align-items: center;
 }
 
 .footer-brand {
-  width: 82px;
-  height: 104px;
+  width: 107px;
+  height: 136px;
   transform: none;
 }
 
 .footer-brand .brand-logo {
-  height: 98px;
+  height: 127px;
 }
 
 .footer p {
@@ -1060,7 +1060,7 @@ h2 i {
   }
 
   .footer {
-    min-height: 150px;
+    min-height: 190px;
     grid-template-columns: 1fr;
     gap: 18px;
     padding-block: 30px;
