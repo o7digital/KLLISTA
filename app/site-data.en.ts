@@ -62,5 +62,5 @@ export const siteDataEn = {
     instagramHandle: "@KALLISTA.CAFE", title: ["GREAT COFFEE.", "TIME WELL SPENT."],
     cta: "FOLLOW US ON INSTAGRAM", instagramUrl: "https://instagram.com/kallista.cafe",
   },
-  footer: { line1: "MAR NEGRO 204 · POPOTLA · MEXICO CITY", line2: "COFFEE · COMMUNITY · QUALITY TIME" },
+  footer: { line1: "MAR NEGRO 204 · POPOTLA · MEXICO CITY", line2: "COFFEE · COMMUNITY · QUALITY TIME", privacy: "PRIVACY NOTICE" },
 } as const;

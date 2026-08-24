@@ -287,6 +287,7 @@ export function KallistaPage({ language }: { language: "es" | "en" }) {
         </a>
         <p>{content.footer.line1}</p>
         <p>{content.footer.line2}</p>
+        <a className="privacy-link" href="/aviso-de-privacidad">{content.footer.privacy}</a>
       </footer>
     </main>
   );

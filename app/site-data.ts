@@ -65,5 +65,5 @@ export const siteData = {
     instagramHandle: "@KALLISTA.CAFE", title: ["CAFÉ RICO.", "TIEMPO BIEN VIVIDO."],
     cta: "SÍGUENOS EN INSTAGRAM", instagramUrl: "https://instagram.com/kallista.cafe",
   },
-  footer: { line1: "MAR NEGRO 204 · POPOTLA · CDMX", line2: "CAFÉ · COMUNIDAD · TIEMPO DE CALIDAD" },
+  footer: { line1: "MAR NEGRO 204 · POPOTLA · CDMX", line2: "CAFÉ · COMUNIDAD · TIEMPO DE CALIDAD", privacy: "AVISO DE PRIVACIDAD" },
 } as const;
