@@ -1,7 +1,7 @@
 export const siteDataEn = {
   opening: { label: "OPENING SOON", area: "POPOTLA · MEXICO CITY", schedule: "MON — FRI · 8:00 — 20:00" },
   navigation: [
-    { href: "#nosotros", label: "ABOUT US" },
+    { href: "#nosotros", label: "WHO WE ARE" },
     { href: "#menu", label: "MENU" },
     { href: "#experiencia", label: "EXPERIENCE" },
     { href: "#eventos", label: "EVENTS" },
