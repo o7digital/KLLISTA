@@ -1,6 +1,7 @@
 export const siteData = {
   opening: { label: "PRÓXIMA APERTURA", area: "POPOTLA · CDMX", schedule: "LUN — VIE · 8:00 — 20:00" },
   navigation: [
+    { href: "#nosotros", label: "NOSOTROS" },
     { href: "#menu", label: "MENÚ" },
     { href: "#experiencia", label: "EXPERIENCIA" },
     { href: "#eventos", label: "EVENTOS" },
@@ -16,6 +17,14 @@ export const siteData = {
     mood: "SIÉNTETE EN CASA", imageAlt: "Café, bebida y pan dulce servidos en una mesa de KALLISTA Café",
   },
   ticker: ["CAFÉ", "DESAYUNO", "WI-FI", "PET FRIENDLY", "AMIGOS", "EVENTOS", "TIEMPO DE CALIDAD"],
+  about: {
+    kicker: "CONÓCENOS",
+    title: ["SOMOS", "KALLISTA."],
+    lead: "Un café de barrio hecho para disfrutar lo cotidiano.",
+    body: "KALLISTA nace de una idea sencilla: las cosas más bellas suceden cuando tenemos tiempo para compartirlas. Por eso queremos crear un lugar vivo y cercano, donde una buena taza, algo rico y una conversación siempre tengan espacio.",
+    signature: "Lo más bello está en compartir.",
+    values: ["CAFÉ CON CARIÑO", "COMIDA PARA DISFRUTAR", "ESPACIO PARA TODXS"],
+  },
   menu: {
     kicker: "ALGO RICO PARA TI", title: ["ELIGE TU", "ANTOJO."],
     note: "Bebidas con personalidad, café bien hecho y algo delicioso para acompañar tu momento.",

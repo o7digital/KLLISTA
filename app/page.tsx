@@ -102,6 +102,28 @@ export function KallistaPage({ language }: { language: "es" | "en" }) {
         </div>
       </div>
 
+      <section className="about-section shell" id="nosotros">
+        <div className="about-title">
+          <p className="kicker">{content.about.kicker}</p>
+          <h2>
+            {content.about.title[0]}
+            <br />
+            <i>{content.about.title[1]}</i>
+          </h2>
+          <span className="about-doodle" aria-hidden="true">⌁ ✦ ⌁</span>
+        </div>
+        <div className="about-story">
+          <p className="about-lead">{content.about.lead}</p>
+          <p>{content.about.body}</p>
+          <strong>{content.about.signature}</strong>
+          <div className="about-values">
+            {content.about.values.map((value, index) => (
+              <span key={value}><b>0{index + 1}</b>{value}</span>
+            ))}
+          </div>
+        </div>
+      </section>
+
       <section className="menu-section shell" id="menu">
         <div className="section-heading">
           <div>

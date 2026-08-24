@@ -1,6 +1,7 @@
 export const siteDataEn = {
   opening: { label: "OPENING SOON", area: "POPOTLA · MEXICO CITY", schedule: "MON — FRI · 8:00 — 20:00" },
   navigation: [
+    { href: "#nosotros", label: "ABOUT US" },
     { href: "#menu", label: "MENU" },
     { href: "#experiencia", label: "EXPERIENCE" },
     { href: "#eventos", label: "EVENTS" },
@@ -16,6 +17,14 @@ export const siteDataEn = {
     mood: "MAKE YOURSELF AT HOME", imageAlt: "Coffee, a refreshing drink, and pastries served at KALLISTA Café",
   },
   ticker: ["COFFEE", "BREAKFAST", "WI-FI", "PET FRIENDLY", "FRIENDS", "EVENTS", "QUALITY TIME"],
+  about: {
+    kicker: "GET TO KNOW US",
+    title: ["WE ARE", "KALLISTA."],
+    lead: "A neighborhood café made for enjoying the everyday.",
+    body: "KALLISTA begins with a simple idea: the most beautiful things happen when we have time to share them. We want to create a lively, welcoming place where there is always room for a great cup, something delicious, and a good conversation.",
+    signature: "The most beautiful moments are shared.",
+    values: ["COFFEE MADE WITH CARE", "FOOD TO ENJOY", "A PLACE FOR EVERYONE"],
+  },
   menu: {
     kicker: "SOMETHING DELICIOUS FOR YOU", title: ["CHOOSE YOUR", "CRAVING."],
     note: "Drinks with personality, carefully brewed coffee, and something delicious to make the moment complete.",
