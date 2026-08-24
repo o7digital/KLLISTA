@@ -20,9 +20,9 @@ export const siteData = {
   about: {
     kicker: "CONÓCENOS",
     title: ["SOMOS", "KALLISTA CAFÉ."],
-    lead: "Un espacio cercano hecho para disfrutar lo cotidiano.",
-    body: "KALLISTA CAFÉ nace de una idea sencilla: las cosas más bellas suceden cuando tenemos tiempo para compartirlas. Por eso queremos crear un lugar vivo y cercano, donde una buena taza, algo rico y una conversación siempre tengan espacio.",
-    signature: "Lo más bello está en compartir.",
+    lead: "Un nombre griego para celebrar la belleza de los momentos cotidianos.",
+    body: "El nombre KALLISTA CAFÉ toma KALLISTA del griego κάλλιστα (kállista), una palabra que expresa hacer o vivir algo «de la mejor y más bella manera». Elegimos este nombre porque creemos que la belleza no tiene que ser solemne: aparece en un café bien hecho, algo rico, una conversación y el tiempo compartido. KALLISTA CAFÉ es nuestra promesa de cuidar cada detalle para convertir lo cotidiano en un buen momento.",
+    signature: "KALLISTA CAFÉ: lo cotidiano, de la manera más bella.",
     values: ["CAFÉ CON CARIÑO", "COMIDA PARA DISFRUTAR", "ESPACIO PARA TODXS"],
   },
   menu: {
@@ -38,7 +38,7 @@ export const siteData = {
   place: {
     kicker: "TIEMPO DE CALIDAD", title: ["UN LUGAR PARA", "DISFRUTAR", "TU TIEMPO"],
     body: "Ven a trabajar, compartir algo rico, encontrarte con amigos o hacer una pausa. KALLISTA CAFÉ quiere convertirse en ese lugar al que siempre tienes ganas de volver.",
-    origin: "El nombre KALLISTA CAFÉ nace de Kallisto: lo más bello. Para nosotros, está en los momentos que compartimos.",
+    origin: "KALLISTA CAFÉ toma su nombre del griego κάλλιστα: hacer las cosas de la mejor y más bella manera.",
     perks: [
       { icon: "⌁", label: "WI-FI" },
       { icon: "♡", label: "PET FRIENDLY" },

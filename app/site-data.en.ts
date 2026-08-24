@@ -20,9 +20,9 @@ export const siteDataEn = {
   about: {
     kicker: "GET TO KNOW US",
     title: ["WE ARE", "KALLISTA CAFÉ."],
-    lead: "A welcoming place made for enjoying the everyday.",
-    body: "KALLISTA CAFÉ begins with a simple idea: the most beautiful things happen when we have time to share them. We want to create a lively, welcoming place where there is always room for a great cup, something delicious, and a good conversation.",
-    signature: "The most beautiful moments are shared.",
+    lead: "A Greek name that celebrates the beauty of everyday moments.",
+    body: "The name KALLISTA CAFÉ takes KALLISTA from the Greek κάλλιστα (kállista), a word that expresses doing or living something “in the best and most beautiful way.” We chose it because beauty does not have to be formal: it lives in a well-made coffee, something delicious, a conversation, and time shared together. KALLISTA CAFÉ is our simple promise to care about every detail and turn the everyday into a good moment.",
+    signature: "KALLISTA CAFÉ: everyday life, in its most beautiful form.",
     values: ["COFFEE MADE WITH CARE", "FOOD TO ENJOY", "A PLACE FOR EVERYONE"],
   },
   menu: {
@@ -38,7 +38,7 @@ export const siteDataEn = {
   place: {
     kicker: "QUALITY TIME", title: ["A PLACE TO", "ENJOY", "YOUR TIME"],
     body: "Come to work, share something delicious, meet up with friends, or take a break. KALLISTA CAFÉ wants to become the place you always feel like coming back to.",
-    origin: "The name KALLISTA CAFÉ comes from Kallisto: the most beautiful. To us, beauty lives in the moments we share.",
+    origin: "KALLISTA CAFÉ takes its name from the Greek κάλλιστα: doing things in the best and most beautiful way.",
     perks: [
       { icon: "⌁", label: "WI-FI" }, { icon: "♡", label: "PET FRIENDLY" },
       { icon: "✎", label: "WORK FRIENDLY" }, { icon: "☻", label: "A PLACE TO SHARE" },
