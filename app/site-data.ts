@@ -6,6 +6,7 @@ export const siteData = {
     { href: "#eventos", label: "EVENTOS" },
     { href: "#visitanos", label: "VISÍTANOS" },
   ],
+  navCta: "QUIERO IR",
   hero: {
     eyebrow: "CAFÉ DE BARRIO · POPOTLA",
     title: ["VEN POR", "EL CAFÉ.", "QUÉDATE POR", "EL MOMENTO."],
@@ -38,7 +39,7 @@ export const siteData = {
     ],
   },
   events: {
-    kicker: "LA COMUNIDAD SE ENCUENTRA", title: ["EVENTOS EN", "KALLISTA"], status: "PRÓXIMAMENTE",
+    kicker: "LA COMUNIDAD SE ENCUENTRA", title: ["EVENTOS EN", "KALLISTA"], status: "PRÓXIMAMENTE", shortStatus: "PRONTO",
     description: "Estamos preparando encuentros para compartir, descubrir y pasarla bien juntos.", cta: "VER PRÓXIMOS EVENTOS",
   },
   club: {

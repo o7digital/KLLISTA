@@ -8,6 +8,10 @@ const manrope = Manrope({ subsets: ["latin"], variable: "--font-body" });
 export const metadata: Metadata = {
   title: "KALLISTA Café | Popotla, CDMX",
   description: "Café rico, comida y tiempo de calidad en Mar Negro 204, Popotla, CDMX.",
+  alternates: {
+    canonical: "/",
+    languages: { es: "/", en: "/en" },
+  },
 };
 
 export default function RootLayout({
