@@ -122,7 +122,10 @@ export default function OliviaWidget() {
 
   return <div className="olivia-kallista">
     {open && <section className="olivia-kallista-panel" aria-label={copy.title}>
-      <header><div><strong>{copy.title}</strong><span>{copy.subtitle}</span></div><button onClick={() => setOpen(false)} aria-label="Cerrar">×</button></header>
+      <header>
+        <div className="olivia-kallista-brand"><span className="olivia-kallista-sparkle" aria-hidden="true">✦</span><div><strong>{copy.title}</strong><span>{copy.subtitle}</span></div></div>
+        <div className="olivia-kallista-header-actions"><span className="olivia-kallista-status"><i />{english ? "Online" : "En línea"}</span><button onClick={() => setOpen(false)} aria-label="Cerrar">×</button></div>
+      </header>
       <div className="olivia-kallista-messages" aria-live="polite">
         <div className="assistant"><p>{copy.welcome}</p></div>
         {messages.map((message, index) => <div className={message.role} key={index}><Reply text={message.content} /></div>)}
@@ -132,9 +135,9 @@ export default function OliviaWidget() {
         setConsent(event.target.checked);
         localStorage.setItem("kallista-olivia-consent", event.target.checked ? "accepted" : "declined");
       }} /> <span>{copy.consent} <a href="/aviso-de-privacidad">Aviso de privacidad</a></span></label>
-      <form onSubmit={send}><input value={input} onChange={(event) => setInput(event.target.value)} placeholder={copy.placeholder} /><button disabled={loading}>{copy.send}</button></form>
+      <form onSubmit={send}><input value={input} onChange={(event) => setInput(event.target.value)} placeholder={copy.placeholder} /><button disabled={loading} aria-label={copy.send}><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m22 2-7 20-4-9-9-4 20-7Z"/><path d="M22 2 11 13"/></svg></button></form>
       <a className="olivia-kallista-contact" href="#contacto">{copy.contact} →</a>
     </section>}
-    <button className="olivia-kallista-launcher" onClick={() => { setOpen(true); void getIdentity().catch(() => undefined); }}><b>O</b><span>{copy.open}</span></button>
+    <button className="olivia-kallista-launcher" onClick={() => { setOpen(true); void getIdentity().catch(() => undefined); }} aria-label={copy.open}>{open ? <span className="olivia-kallista-close">×</span> : <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M21 15a4 4 0 0 1-4 4H8l-5 3V7a4 4 0 0 1 4-4h10a4 4 0 0 1 4 4v8Z"/><path d="M8 9h8M8 13h5"/></svg>}</button>
   </div>;
 }
