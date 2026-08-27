@@ -6,9 +6,35 @@ export function KallistaPage({ language }: { language: "es" | "en" }) {
   const content = language === "en" ? siteDataEn : siteData;
   const alternateLanguage = language === "en" ? "ES" : "EN";
   const alternateHref = language === "en" ? "/" : "/en";
+  const structuredData = {
+    "@context": "https://schema.org",
+    "@type": "CafeOrCoffeeShop",
+    name: "KALLISTA Café",
+    image: "https://kallistacafe.com/kallista-hero.png",
+    url: "https://kallistacafe.com",
+    sameAs: ["https://instagram.com/kallista.cafe"],
+    address: {
+      "@type": "PostalAddress",
+      streetAddress: "Mar Negro 204",
+      addressLocality: "Miguel Hidalgo",
+      addressRegion: "Ciudad de México",
+      addressCountry: "MX",
+    },
+    openingHoursSpecification: [{
+      "@type": "OpeningHoursSpecification",
+      dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+      opens: "08:00",
+      closes: "20:00",
+    }],
+    priceRange: "$$",
+  };
 
   return (
     <main lang={language}>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData).replace(/</g, "\\u003c") }}
+      />
       <div className="topline">
         <span>{content.opening.label}</span>
         <span className="topline-center">{content.opening.area}</span>
