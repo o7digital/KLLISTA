@@ -6,6 +6,7 @@ export const siteData = {
     { href: "#experiencia", label: "EXPERIENCIA" },
     { href: "#eventos", label: "EVENTOS" },
     { href: "#contacto", label: "CONTACTO" },
+    { href: "#preguntas-frecuentes", label: "PREGUNTAS FRECUENTES" },
   ],
   navCta: "QUIERO IR",
   hero: {
@@ -67,6 +68,16 @@ export const siteData = {
       namePlaceholder: "Tu nombre", emailPlaceholder: "tu@correo.com", phonePlaceholder: "+52 55 0000 0000",
       messagePlaceholder: "¿Cómo podemos ayudarte?", submit: "ENVIAR MENSAJE",
     },
+  },
+  faq: {
+    kicker: "ANTES DE VENIR", title: ["PREGUNTAS", "FRECUENTES."],
+    items: [
+      { question: "¿Dónde está KALLISTA CAFÉ?", answer: "Estamos en Mar Negro 204, Popotla, Miguel Hidalgo, CDMX." },
+      { question: "¿Cuál es el horario?", answer: "Abrimos de lunes a viernes, de 8:00 a 20:00." },
+      { question: "¿Tienen Wi-Fi y espacio para trabajar?", answer: "Sí. Contamos con Wi-Fi y un espacio cómodo para trabajar, hacer una pausa o reunirte." },
+      { question: "¿KALLISTA CAFÉ es pet friendly?", answer: "Sí, tus mascotas son bienvenidas. Te pedimos mantenerlas contigo y cuidar la comodidad de todas las personas." },
+      { question: "¿Organizan eventos?", answer: "Estamos preparando encuentros y actividades para la comunidad. Publicaremos las próximas fechas en el sitio y en Instagram." },
+    ],
   },
   final: {
     instagramHandle: "@KALLISTA.CAFE", title: ["CAFÉ RICO.", "TIEMPO BIEN VIVIDO."],

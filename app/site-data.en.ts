@@ -6,6 +6,7 @@ export const siteDataEn = {
     { href: "#experiencia", label: "EXPERIENCE" },
     { href: "#eventos", label: "EVENTS" },
     { href: "#contacto", label: "CONTACT" },
+    { href: "#preguntas-frecuentes", label: "FAQ" },
   ],
   navCta: "LET'S GO",
   hero: {
@@ -64,6 +65,16 @@ export const siteDataEn = {
       namePlaceholder: "Your name", emailPlaceholder: "you@email.com", phonePlaceholder: "+52 55 0000 0000",
       messagePlaceholder: "How can we help?", submit: "SEND MESSAGE",
     },
+  },
+  faq: {
+    kicker: "BEFORE YOU VISIT", title: ["FREQUENTLY ASKED", "QUESTIONS."],
+    items: [
+      { question: "Where is KALLISTA CAFÉ?", answer: "We are at Mar Negro 204, Popotla, Miguel Hidalgo, CDMX." },
+      { question: "What are your opening hours?", answer: "We are open Monday through Friday, from 8:00 to 20:00." },
+      { question: "Do you have Wi-Fi and space to work?", answer: "Yes. We offer Wi-Fi and a comfortable space to work, take a break, or meet up." },
+      { question: "Is KALLISTA CAFÉ pet friendly?", answer: "Yes, pets are welcome. Please keep them with you and be mindful of everyone’s comfort." },
+      { question: "Do you host events?", answer: "We are preparing gatherings and activities for the community. Upcoming dates will be shared here and on Instagram." },
+    ],
   },
   final: {
     instagramHandle: "@KALLISTA.CAFE", title: ["GREAT COFFEE.", "TIME WELL SPENT."],

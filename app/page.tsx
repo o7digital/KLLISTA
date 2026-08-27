@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { MobileMenu } from "./mobile-menu";
 import { siteData } from "./site-data";
 import { siteDataEn } from "./site-data.en";
 
@@ -65,6 +66,7 @@ export function KallistaPage({ language }: { language: "es" | "en" }) {
         <div className="nav-actions">
           <a className="language-switch" href={alternateHref} aria-label={language === "en" ? "Ver sitio en español" : "View site in English"}>{alternateLanguage}</a>
           <a className="nav-cta" href="#contacto">{content.navCta} <span>↗</span></a>
+          <MobileMenu items={content.navigation} cta={content.navCta} language={language} />
         </div>
       </nav>
 
@@ -313,6 +315,28 @@ export function KallistaPage({ language }: { language: "es" | "en" }) {
               </a>
             </div>
           </div>
+        </div>
+      </section>
+
+      <section className="faq-section shell" id="preguntas-frecuentes">
+        <div className="faq-heading">
+          <p className="kicker">{content.faq.kicker}</p>
+          <h2>
+            {content.faq.title[0]}
+            <br />
+            <i>{content.faq.title[1]}</i>
+          </h2>
+        </div>
+        <div className="faq-list">
+          {content.faq.items.map((item, index) => (
+            <details key={item.question} open={index === 0}>
+              <summary>
+                <span>{item.question}</span>
+                <b aria-hidden="true">+</b>
+              </summary>
+              <p>{item.answer}</p>
+            </details>
+          ))}
         </div>
       </section>
 
