@@ -138,6 +138,6 @@ export default function OliviaWidget() {
       <form onSubmit={send}><input value={input} onChange={(event) => setInput(event.target.value)} placeholder={copy.placeholder} /><button disabled={loading} aria-label={copy.send}><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m22 2-7 20-4-9-9-4 20-7Z"/><path d="M22 2 11 13"/></svg></button></form>
       <a className="olivia-kallista-contact" href="#contacto">{copy.contact} →</a>
     </section>}
-    <button className="olivia-kallista-launcher" onClick={() => { setOpen(true); void getIdentity().catch(() => undefined); }} aria-label={copy.open}>{open ? <span className="olivia-kallista-close">×</span> : <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M21 15a4 4 0 0 1-4 4H8l-5 3V7a4 4 0 0 1 4-4h10a4 4 0 0 1 4 4v8Z"/><path d="M8 9h8M8 13h5"/></svg>}</button>
+    <button className={`olivia-kallista-launcher${open ? " is-open" : ""}`} onClick={() => { setOpen(true); void getIdentity().catch(() => undefined); }} aria-label={copy.open}>{open ? <span className="olivia-kallista-close">×</span> : <><span className="olivia-kallista-launcher-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M21 15a4 4 0 0 1-4 4H8l-5 3V7a4 4 0 0 1 4-4h10a4 4 0 0 1 4 4v8Z"/><path d="M8 9h8M8 13h5"/></svg></span><span className="olivia-kallista-launcher-copy"><strong>Olivia</strong><small>{english ? "Need help?" : "¿Necesitas ayuda?"}</small></span><i aria-hidden="true" /></>}</button>
   </div>;
 }
