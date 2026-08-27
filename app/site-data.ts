@@ -5,7 +5,7 @@ export const siteData = {
     { href: "#menu", label: "MENÚ" },
     { href: "#experiencia", label: "EXPERIENCIA" },
     { href: "#eventos", label: "EVENTOS" },
-    { href: "#visitanos", label: "VISÍTANOS" },
+    { href: "#contacto", label: "CONTACTO" },
   ],
   navCta: "QUIERO IR",
   hero: {
@@ -57,9 +57,16 @@ export const siteData = {
     tagline: "VEN POR EL CAFÉ.\nVUELVE POR LA GENTE.",
   },
   visit: {
-    kicker: "NOS VEMOS AQUÍ", title: ["POPOTLA", "TIENE PLAN."], area: "Mar Negro 204, Popotla",
+    kicker: "HABLEMOS", title: ["CONTACTA", "CON NOSOTROS."], area: "Mar Negro 204, Popotla",
     city: "Miguel Hidalgo, CDMX", scheduleLabel: "HORARIO", schedule: ["Lunes a viernes", "8:00 a 20:00"],
     mapsLabel: "ABRIR EN MAPAS", mapsUrl: "https://www.google.com/maps/search/?api=1&query=Mar+Negro+204%2C+Popotla%2C+Miguel+Hidalgo%2C+CDMX",
+    mapTitle: "Ubicación de KALLISTA Café en Google Maps",
+    mapEmbedUrl: "https://www.google.com/maps?q=Mar+Negro+204%2C+Popotla%2C+Miguel+Hidalgo%2C+CDMX&output=embed",
+    form: {
+      name: "NOMBRE", email: "CORREO ELECTRÓNICO", phone: "TELÉFONO (OPCIONAL)", message: "MENSAJE",
+      namePlaceholder: "Tu nombre", emailPlaceholder: "tu@correo.com", phonePlaceholder: "+52 55 0000 0000",
+      messagePlaceholder: "¿Cómo podemos ayudarte?", submit: "ENVIAR MENSAJE",
+    },
   },
   final: {
     instagramHandle: "@KALLISTA.CAFE", title: ["CAFÉ RICO.", "TIEMPO BIEN VIVIDO."],

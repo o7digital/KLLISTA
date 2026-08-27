@@ -35,7 +35,7 @@ export function KallistaPage({ language }: { language: "es" | "en" }) {
         </div>
         <div className="nav-actions">
           <a className="language-switch" href={alternateHref} aria-label={language === "en" ? "Ver sitio en español" : "View site in English"}>{alternateLanguage}</a>
-          <a className="nav-cta" href="#visitanos">{content.navCta} <span>↗</span></a>
+          <a className="nav-cta" href="#contacto">{content.navCta} <span>↗</span></a>
         </div>
       </nav>
 
@@ -57,7 +57,7 @@ export function KallistaPage({ language }: { language: "es" | "en" }) {
             <a className="button button-dark" href="#menu">
               {content.hero.ctaPrimary} <span>↓</span>
             </a>
-            <a className="text-link" href="#visitanos">
+            <a className="text-link" href="#contacto">
               {content.hero.ctaSecondary} <span>↗</span>
             </a>
           </div>
@@ -224,7 +224,7 @@ export function KallistaPage({ language }: { language: "es" | "en" }) {
         </article>
       </section>
 
-      <section className="visit shell" id="visitanos">
+      <section className="visit shell" id="contacto">
         <div className="visit-copy">
           <p className="kicker">{content.visit.kicker}</p>
           <h2>
@@ -238,27 +238,51 @@ export function KallistaPage({ language }: { language: "es" | "en" }) {
             {content.visit.city}
           </p>
         </div>
-        <div className="visit-card">
-          <div className="map-cross" aria-hidden="true">
-            <span className="road road-a" />
-            <span className="road road-b" />
-            <span className="road road-c" />
-            <span className="map-pin">
-              <b>K</b>
-            </span>
-          </div>
-          <div className="visit-details">
-            <div>
-              <span>{content.visit.scheduleLabel}</span>
-              <strong>
-                {content.visit.schedule[0]}
-                <br />
-                {content.visit.schedule[1]}
-              </strong>
+        <div className="contact-content">
+          <form className="contact-form" action="https://formspree.io/f/mrpgzqjp" method="POST">
+            <div className="contact-field">
+              <label htmlFor={`${language}-name`}>{content.visit.form.name}</label>
+              <input id={`${language}-name`} name="name" type="text" placeholder={content.visit.form.namePlaceholder} autoComplete="name" required />
             </div>
-            <a href={content.visit.mapsUrl} target="_blank" rel="noreferrer">
-              {content.visit.mapsLabel} <span>↗</span>
-            </a>
+            <div className="contact-fields-row">
+              <div className="contact-field">
+                <label htmlFor={`${language}-email`}>{content.visit.form.email}</label>
+                <input id={`${language}-email`} name="email" type="email" placeholder={content.visit.form.emailPlaceholder} autoComplete="email" required />
+              </div>
+              <div className="contact-field">
+                <label htmlFor={`${language}-phone`}>{content.visit.form.phone}</label>
+                <input id={`${language}-phone`} name="phone" type="tel" placeholder={content.visit.form.phonePlaceholder} autoComplete="tel" />
+              </div>
+            </div>
+            <div className="contact-field">
+              <label htmlFor={`${language}-message`}>{content.visit.form.message}</label>
+              <textarea id={`${language}-message`} name="message" placeholder={content.visit.form.messagePlaceholder} rows={5} required />
+            </div>
+            <button type="submit">{content.visit.form.submit} <span>↗</span></button>
+          </form>
+
+          <div className="visit-card">
+            <iframe
+              className="google-map"
+              src={content.visit.mapEmbedUrl}
+              title={content.visit.mapTitle}
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+              allowFullScreen
+            />
+            <div className="visit-details">
+              <div>
+                <span>{content.visit.scheduleLabel}</span>
+                <strong>
+                  {content.visit.schedule[0]}
+                  <br />
+                  {content.visit.schedule[1]}
+                </strong>
+              </div>
+              <a href={content.visit.mapsUrl} target="_blank" rel="noreferrer">
+                {content.visit.mapsLabel} <span>↗</span>
+              </a>
+            </div>
           </div>
         </div>
       </section>

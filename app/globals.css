@@ -934,6 +934,93 @@ h2 i {
   background: var(--paper);
 }
 
+.contact-content {
+  display: grid;
+  gap: 24px;
+}
+
+.contact-form {
+  padding: 32px;
+  display: grid;
+  gap: 22px;
+  background: var(--paper);
+  border: 1px solid var(--ink);
+  box-shadow: 8px 8px 0 var(--navy);
+}
+
+.contact-fields-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 18px;
+}
+
+.contact-field {
+  display: grid;
+  gap: 8px;
+}
+
+.contact-field label {
+  font-size: 9px;
+  font-weight: 900;
+  letter-spacing: 0.12em;
+}
+
+.contact-field input,
+.contact-field textarea {
+  width: 100%;
+  padding: 13px 0;
+  border: 0;
+  border-bottom: 1px solid var(--ink);
+  border-radius: 0;
+  outline: none;
+  background: transparent;
+  color: var(--ink);
+  font: inherit;
+  font-size: 14px;
+}
+
+.contact-field textarea {
+  min-height: 110px;
+  resize: vertical;
+}
+
+.contact-field input:focus,
+.contact-field textarea:focus {
+  border-bottom-color: var(--blue);
+  box-shadow: 0 2px 0 var(--blue);
+}
+
+.contact-form button {
+  width: max-content;
+  min-width: 190px;
+  padding: 16px 18px;
+  display: flex;
+  justify-content: space-between;
+  gap: 28px;
+  border: 0;
+  background: var(--navy);
+  color: white;
+  cursor: pointer;
+  font: inherit;
+  font-size: 10px;
+  font-weight: 900;
+  letter-spacing: 0.1em;
+  transition: transform 0.2s ease;
+}
+
+.contact-form button:hover,
+.contact-form button:focus-visible {
+  transform: translateY(-3px);
+}
+
+.google-map {
+  width: 100%;
+  height: 350px;
+  display: block;
+  border: 0;
+  filter: saturate(0.7) contrast(0.95);
+}
+
 .map-cross {
   height: 350px;
   position: relative;
@@ -1509,6 +1596,23 @@ h2 i {
     align-items: flex-start;
     flex-direction: column;
     gap: 25px;
+  }
+
+  .contact-form {
+    padding: 24px;
+    box-shadow: 6px 6px 0 var(--navy);
+  }
+
+  .contact-fields-row {
+    grid-template-columns: 1fr;
+  }
+
+  .contact-form button {
+    width: 100%;
+  }
+
+  .google-map {
+    height: 300px;
   }
 
   .visit-details div {
