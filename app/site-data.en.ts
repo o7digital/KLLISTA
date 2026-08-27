@@ -11,7 +11,7 @@ export const siteDataEn = {
   hero: {
     eyebrow: "KALLISTA CAFÉ · POPOTLA",
     title: ["COME FOR", "THE COFFEE.", "STAY FOR", "THE MOMENT."],
-    intro: "Great coffee, something delicious, and a place to share, work, or simply enjoy your time. Welcome to KALLISTA CAFÉ.",
+    intro: "Specialty coffee, something delicious, and a pet-friendly place with Wi-Fi to share, work, or enjoy your time in Popotla, CDMX. Welcome to KALLISTA CAFÉ.",
     ctaPrimary: "EXPLORE THE MENU", ctaSecondary: "HOW TO GET HERE",
     artLabel: ["COFFEE", "FRIENDS", "QUALITY TIME"], stickerTop: "MADE WITH", stickerBottom: "CARE",
     mood: "MAKE YOURSELF AT HOME", imageAlt: "Coffee, a refreshing drink, and pastries served at KALLISTA Café",
@@ -37,7 +37,7 @@ export const siteDataEn = {
   },
   place: {
     kicker: "QUALITY TIME", title: ["A PLACE TO", "ENJOY", "YOUR TIME"],
-    body: "Come to work, share something delicious, meet up with friends, or take a break. KALLISTA CAFÉ wants to become the place you always feel like coming back to.",
+    body: "Come to work, have breakfast, share something delicious, meet friends, or take a break in Popotla, CDMX. KALLISTA CAFÉ wants to become the place you always feel like coming back to.",
     origin: "KALLISTA CAFÉ takes its name from the Greek κάλλιστα: doing things in the best and most beautiful way.",
     perks: [
       { icon: "⌁", label: "WI-FI" }, { icon: "♡", label: "PET FRIENDLY" },

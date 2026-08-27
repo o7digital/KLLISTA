@@ -10,6 +10,9 @@ export function KallistaPage({ language }: { language: "es" | "en" }) {
     "@context": "https://schema.org",
     "@type": "CafeOrCoffeeShop",
     name: "KALLISTA Café",
+    description: language === "en"
+      ? "Specialty coffee, breakfast, matcha, Wi-Fi, and a pet-friendly space in Popotla, CDMX."
+      : "Café de especialidad, desayuno, matcha, Wi-Fi y un espacio pet friendly en Popotla, CDMX.",
     image: "https://kallistacafe.com/kallista-hero.png",
     url: "https://kallistacafe.com",
     sameAs: ["https://instagram.com/kallista.cafe"],

@@ -11,7 +11,7 @@ export const siteData = {
   hero: {
     eyebrow: "KALLISTA CAFÉ · POPOTLA",
     title: ["VEN POR", "EL CAFÉ.", "QUÉDATE POR", "EL MOMENTO."],
-    intro: "Café rico, algo delicioso y un lugar para compartir, trabajar o simplemente disfrutar tu tiempo. Bienvenido a KALLISTA CAFÉ.",
+    intro: "Café de especialidad, algo delicioso y un lugar pet friendly con Wi-Fi para compartir, trabajar o disfrutar tu tiempo en Popotla, CDMX. Bienvenido a KALLISTA CAFÉ.",
     ctaPrimary: "CONOCE EL MENÚ", ctaSecondary: "CÓMO LLEGAR",
     artLabel: ["CAFÉ", "AMIGOS", "TIEMPO DE CALIDAD"], stickerTop: "HECHO CON", stickerBottom: "CARIÑO",
     mood: "SIÉNTETE EN CASA", imageAlt: "Café, bebida y pan dulce servidos en una mesa de KALLISTA Café",
@@ -37,7 +37,7 @@ export const siteData = {
   },
   place: {
     kicker: "TIEMPO DE CALIDAD", title: ["UN LUGAR PARA", "DISFRUTAR", "TU TIEMPO"],
-    body: "Ven a trabajar, compartir algo rico, encontrarte con amigos o hacer una pausa. KALLISTA CAFÉ quiere convertirse en ese lugar al que siempre tienes ganas de volver.",
+    body: "Ven a trabajar, desayunar, compartir algo rico, encontrarte con amigos o hacer una pausa en Popotla, CDMX. KALLISTA CAFÉ quiere convertirse en ese lugar al que siempre tienes ganas de volver.",
     origin: "KALLISTA CAFÉ toma su nombre del griego κάλλιστα: hacer las cosas de la mejor y más bella manera.",
     perks: [
       { icon: "⌁", label: "WI-FI" },
