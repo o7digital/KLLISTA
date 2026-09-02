@@ -83,5 +83,17 @@ export const siteData = {
     instagramHandle: "@KALLISTA.CAFE", title: ["CAFÉ RICO.", "TIEMPO BIEN VIVIDO."],
     cta: "SÍGUENOS EN INSTAGRAM", instagramUrl: "https://instagram.com/kallista.cafe",
   },
-  footer: { line1: "MAR NEGRO 204 · POPOTLA · CDMX", line2: "CAFÉ · COMUNIDAD · TIEMPO DE CALIDAD", privacy: "AVISO DE PRIVACIDAD" },
+  footer: {
+    line1: "MAR NEGRO 204 · POPOTLA · CDMX", line2: "CAFÉ · COMUNIDAD · TIEMPO DE CALIDAD", privacy: "AVISO DE PRIVACIDAD",
+    keywords: [
+      { label: "KALLISTA Café CDMX", href: "/" }, { label: "café en Popotla CDMX", href: "/" },
+      { label: "cafetería en Popotla CDMX", href: "/" }, { label: "café en Miguel Hidalgo CDMX", href: "/" },
+      { label: "café de especialidad CDMX", href: "/menu" }, { label: "desayuno en Popotla CDMX", href: "/menu" },
+      { label: "crepas en Popotla", href: "/menu#crepas" }, { label: "waffles en Popotla", href: "/menu#comida" },
+      { label: "matcha en CDMX", href: "/menu#bebidas" }, { label: "menú infantil cafetería", href: "/menu#pequenos" },
+      { label: "café pet friendly CDMX", href: "/experiencia" }, { label: "café con Wi-Fi CDMX", href: "/experiencia" },
+      { label: "café para trabajar CDMX", href: "/experiencia" }, { label: "lugar para desayunar en Popotla", href: "/experiencia" },
+      { label: "eventos en cafetería CDMX", href: "/eventos" }, { label: "cafetería en Mar Negro 204", href: "/#contacto" },
+    ],
+  },
 } as const;

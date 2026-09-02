@@ -80,5 +80,17 @@ export const siteDataEn = {
     instagramHandle: "@KALLISTA.CAFE", title: ["GREAT COFFEE.", "TIME WELL SPENT."],
     cta: "FOLLOW US ON INSTAGRAM", instagramUrl: "https://instagram.com/kallista.cafe",
   },
-  footer: { line1: "MAR NEGRO 204 · POPOTLA · MEXICO CITY", line2: "COFFEE · COMMUNITY · QUALITY TIME", privacy: "PRIVACY NOTICE" },
+  footer: {
+    line1: "MAR NEGRO 204 · POPOTLA · MEXICO CITY", line2: "COFFEE · COMMUNITY · QUALITY TIME", privacy: "PRIVACY NOTICE",
+    keywords: [
+      { label: "KALLISTA Café CDMX", href: "/en" }, { label: "coffee shop Popotla CDMX", href: "/en" },
+      { label: "coffee shop Miguel Hidalgo CDMX", href: "/en" }, { label: "specialty coffee CDMX", href: "/en/menu" },
+      { label: "breakfast in Popotla CDMX", href: "/en/menu" }, { label: "crêpes in Popotla", href: "/en/menu#crepas" },
+      { label: "waffles in Popotla", href: "/en/menu#comida" }, { label: "matcha in CDMX", href: "/en/menu#bebidas" },
+      { label: "kids’ coffee shop menu", href: "/en/menu#pequenos" }, { label: "pet-friendly coffee shop CDMX", href: "/en/experience" },
+      { label: "coffee shop with Wi-Fi CDMX", href: "/en/experience" }, { label: "coffee shop to work from CDMX", href: "/en/experience" },
+      { label: "breakfast place in Popotla", href: "/en/experience" }, { label: "coffee shop events CDMX", href: "/en/events" },
+      { label: "coffee shop at Mar Negro 204", href: "/en#contacto" },
+    ],
+  },
 } as const;

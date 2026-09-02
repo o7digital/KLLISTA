@@ -381,19 +381,22 @@ export function KallistaPage({ language }: { language: "es" | "en" }) {
         </a>
       </section>
 
-      <footer className="footer shell">
-        <a className="brand footer-brand" href="#inicio" aria-label={language === "en" ? "KALLISTA Café, home" : "KALLISTA Café, inicio"}>
-          <Image
-            className="brand-logo"
-            src="/kallista-logo.png"
-            alt="KALLISTA Café"
-            width={290}
-            height={320}
-          />
-        </a>
-        <p>{content.footer.line1}</p>
-        <p>{content.footer.line2}</p>
-        <a className="privacy-link" href="/aviso-de-privacidad">{content.footer.privacy}</a>
+      <footer className="site-footer">
+        <div className="footer shell">
+          <a className="brand footer-brand" href="#inicio" aria-label={language === "en" ? "KALLISTA Café, home" : "KALLISTA Café, inicio"}>
+            <Image className="brand-logo" src="/kallista-logo.png" alt="KALLISTA Café" width={290} height={320} />
+          </a>
+          <p>{content.footer.line1}</p>
+          <p>{content.footer.line2}</p>
+          <a className="privacy-link" href="/aviso-de-privacidad">{content.footer.privacy}</a>
+        </div>
+        <nav className="seo-keywords" aria-label={language === "en" ? "Explore KALLISTA Café" : "Explora KALLISTA Café"}>
+          <div className="shell">
+            {content.footer.keywords.map((keyword, index) => (
+              <span key={keyword.label}><a href={keyword.href}>{keyword.label}</a>{index < content.footer.keywords.length - 1 && " · "}</span>
+            ))}
+          </div>
+        </nav>
       </footer>
     </main>
   );

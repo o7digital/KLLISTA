@@ -1326,6 +1326,29 @@ h2 i {
   color: var(--blue);
 }
 
+.seo-keywords {
+  padding: 25px 0 28px;
+  border-top: 1px solid rgba(255, 255, 255, 0.12);
+  background: var(--ink);
+  color: rgba(255, 255, 255, 0.55);
+}
+
+.seo-keywords .shell {
+  max-width: 1180px;
+  font-size: 10px;
+  line-height: 2.25;
+  text-align: center;
+}
+
+.seo-keywords a {
+  transition: color 0.2s ease;
+}
+
+.seo-keywords a:hover,
+.seo-keywords a:focus-visible {
+  color: var(--sky);
+}
+
 .legal-page {
   min-height: 100vh;
 }
