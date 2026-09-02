@@ -5,6 +5,8 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title: "Aviso de Privacidad | KALLISTA CAFÉ",
   description: "Aviso de privacidad integral de KALLISTA CAFÉ conforme a la legislación mexicana.",
+  alternates: { canonical: "/aviso-de-privacidad" },
+  robots: { index: true, follow: true },
 };
 
 export default function PrivacyNotice() {
@@ -33,7 +35,7 @@ export default function PrivacyNotice() {
 
           <section>
             <h2>2. Datos personales que podemos tratar</h2>
-            <p>Actualmente el sitio no solicita crear cuentas, no contiene formularios de contacto y no procesa pagos. Podemos recibir datos cuando una persona los proporciona voluntariamente al comunicarse con KALLISTA CAFÉ por redes sociales, de forma presencial o al participar en futuras actividades.</p>
+            <p>El sitio no solicita crear cuentas ni procesa pagos. Podemos recibir datos mediante el formulario de contacto, el asistente de atención, redes sociales, de forma presencial o al participar en futuras actividades.</p>
             <ul>
               <li>Datos de identificación y contacto, como nombre, teléfono, correo electrónico o usuario de red social.</li>
               <li>Información relacionada con consultas, reservaciones, eventos, solicitudes o comentarios.</li>

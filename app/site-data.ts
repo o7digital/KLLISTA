@@ -2,9 +2,9 @@ export const siteData = {
   opening: { label: "PRÓXIMA APERTURA", area: "POPOTLA · CDMX", schedule: "LUN — VIE · 8:00 — 20:00" },
   navigation: [
     { href: "#nosotros", label: "QUIÉNES SOMOS" },
-    { href: "#menu", label: "MENÚ" },
-    { href: "#experiencia", label: "EXPERIENCIA" },
-    { href: "#eventos", label: "EVENTOS" },
+    { href: "/menu", label: "MENÚ" },
+    { href: "/experiencia", label: "EXPERIENCIA" },
+    { href: "/eventos", label: "EVENTOS" },
     { href: "#contacto", label: "CONTACTO" },
     { href: "#preguntas-frecuentes", label: "PREGUNTAS FRECUENTES" },
   ],

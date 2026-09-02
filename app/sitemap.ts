@@ -1,26 +1,27 @@
 import type { MetadataRoute } from "next";
 
+const origin = "https://www.kallistacafe.com";
+const lastModified = new Date("2026-09-02");
+
 export default function sitemap(): MetadataRoute.Sitemap {
-  const lastModified = new Date();
+  const bilingualPages = [
+    { es: "", en: "/en", priority: 1 },
+    { es: "/menu", en: "/en/menu", priority: 0.9 },
+    { es: "/experiencia", en: "/en/experience", priority: 0.8 },
+    { es: "/eventos", en: "/en/events", priority: 0.8 },
+  ];
 
   return [
+    ...bilingualPages.flatMap(({ es, en, priority }) => {
+      const languages = { "es-MX": `${origin}${es}`, en: `${origin}${en}`, "x-default": `${origin}${es}` };
+      return [
+        { url: `${origin}${es}`, lastModified, changeFrequency: "monthly" as const, priority, alternates: { languages } },
+        { url: `${origin}${en}`, lastModified, changeFrequency: "monthly" as const, priority: priority - 0.1, alternates: { languages } },
+      ];
+    }),
     {
-      url: "https://kallistacafe.com",
-      lastModified,
-      changeFrequency: "weekly",
-      priority: 1,
-      alternates: { languages: { es: "https://kallistacafe.com", en: "https://kallistacafe.com/en" } },
-    },
-    {
-      url: "https://kallistacafe.com/en",
-      lastModified,
-      changeFrequency: "weekly",
-      priority: 0.8,
-      alternates: { languages: { es: "https://kallistacafe.com", en: "https://kallistacafe.com/en" } },
-    },
-    {
-      url: "https://kallistacafe.com/aviso-de-privacidad",
-      lastModified,
+      url: `${origin}/aviso-de-privacidad`,
+      lastModified: new Date("2026-08-24"),
       changeFrequency: "yearly",
       priority: 0.2,
     },

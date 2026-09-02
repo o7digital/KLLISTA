@@ -1,13 +1,13 @@
 import type { Metadata } from "next";
 import { Fraunces, Manrope } from "next/font/google";
-import "./globals.css";
-import OliviaWidget from "./olivia-widget";
+import "../globals.css";
+import OliviaWidget from "../olivia-widget";
 
 const fraunces = Fraunces({ subsets: ["latin"], variable: "--font-display" });
 const manrope = Manrope({ subsets: ["latin"], variable: "--font-body" });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://kallistacafe.com"),
+  metadataBase: new URL("https://www.kallistacafe.com"),
   title: "KALLISTA Café | Café en Popotla, CDMX",
   description: "Café de especialidad, comida rica y un espacio para compartir en Mar Negro 204, Popotla, CDMX. Conoce KALLISTA Café.",
   keywords: [
@@ -26,7 +26,7 @@ export const metadata: Metadata = {
   ],
   alternates: {
     canonical: "/",
-    languages: { es: "/", en: "/en" },
+    languages: { "es-MX": "/", en: "/en", "x-default": "/" },
   },
   openGraph: {
     type: "website",

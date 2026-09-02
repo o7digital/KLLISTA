@@ -12,6 +12,34 @@
   --serif: var(--font-display), Georgia, serif;
 }
 
+/* SEO detail pages */
+.detail-page { min-height: 100vh; background: var(--cream); color: var(--ink); padding-bottom: 6rem; }
+.detail-nav { min-height: 110px; display: flex; align-items: center; justify-content: space-between; border-bottom: 1px solid rgba(31, 28, 24, .18); }
+.detail-nav > a:last-child { color: inherit; font-size: .75rem; font-weight: 800; letter-spacing: .08em; text-decoration: none; }
+.detail-hero { padding-top: clamp(4rem, 9vw, 8rem); padding-bottom: 3rem; }
+.detail-hero h1 { max-width: 900px; margin: .5rem 0 1.5rem; font-family: var(--font-display), serif; font-size: clamp(3.2rem, 8vw, 7.5rem); font-weight: 700; line-height: .92; letter-spacing: -.055em; }
+.detail-lead { max-width: 760px; font-size: clamp(1.2rem, 2.5vw, 1.8rem); line-height: 1.45; }
+.detail-content { display: grid; gap: 3rem; }
+.detail-content > p { max-width: 760px; font-size: 1.05rem; line-height: 1.75; }
+.detail-content .menu-grid { margin-top: 0; }
+.detail-content .menu-card { min-height: 360px; }
+.detail-content .menu-info h2 { font-size: 1.35rem; }
+.detail-features { display: grid; grid-template-columns: repeat(5, 1fr); border: 1px solid currentColor; }
+.detail-features span { min-height: 150px; padding: 1.5rem; display: flex; flex-direction: column; justify-content: space-between; font-weight: 800; border-right: 1px solid currentColor; }
+.detail-features span:last-child { border-right: 0; }
+.detail-features b { font-size: 2rem; }
+.detail-notice { max-width: 760px; padding: 2.5rem; background: var(--pale-blue); border: 1px solid currentColor; }
+.detail-notice strong { font-family: var(--font-display), serif; font-size: 2rem; }
+.detail-notice p { margin-top: 1rem; line-height: 1.6; }
+.detail-button { justify-self: start; text-decoration: none; }
+
+@media (max-width: 800px) {
+  .detail-nav { min-height: 84px; }
+  .detail-features { grid-template-columns: 1fr 1fr; }
+  .detail-features span { border-bottom: 1px solid currentColor; }
+  .detail-features span:nth-child(2n) { border-right: 0; }
+}
+
 * {
   box-sizing: border-box;
 }

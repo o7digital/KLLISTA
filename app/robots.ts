@@ -6,6 +6,7 @@ export default function robots(): MetadataRoute.Robots {
       userAgent: "*",
       allow: "/",
     },
-    sitemap: "https://kallistacafe.com/sitemap.xml",
+    sitemap: "https://www.kallistacafe.com/sitemap.xml",
+    host: "https://www.kallistacafe.com",
   };
 }

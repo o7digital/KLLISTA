@@ -10,19 +10,28 @@ export function KallistaPage({ language }: { language: "es" | "en" }) {
   const structuredData = {
     "@context": "https://schema.org",
     "@type": "CafeOrCoffeeShop",
+    "@id": "https://www.kallistacafe.com/#cafe",
     name: "KALLISTA Café",
     description: language === "en"
       ? "Specialty coffee, breakfast, matcha, Wi-Fi, and a pet-friendly space in Popotla, CDMX."
       : "Café de especialidad, desayuno, matcha, Wi-Fi y un espacio pet friendly en Popotla, CDMX.",
-    image: "https://kallistacafe.com/kallista-hero.png",
-    url: "https://kallistacafe.com",
+    image: "https://www.kallistacafe.com/kallista-hero.png",
+    url: language === "en" ? "https://www.kallistacafe.com/en" : "https://www.kallistacafe.com",
+    hasMap: "https://www.google.com/maps/search/?api=1&query=Mar+Negro+204%2C+Popotla%2C+Miguel+Hidalgo%2C+CDMX",
+    menu: language === "en" ? "https://www.kallistacafe.com/en/menu" : "https://www.kallistacafe.com/menu",
     sameAs: ["https://instagram.com/kallista.cafe"],
     address: {
       "@type": "PostalAddress",
       streetAddress: "Mar Negro 204",
       addressLocality: "Miguel Hidalgo",
       addressRegion: "Ciudad de México",
+      postalCode: "11400",
       addressCountry: "MX",
+    },
+    geo: {
+      "@type": "GeoCoordinates",
+      latitude: 19.4550919,
+      longitude: -99.180459,
     },
     openingHoursSpecification: [{
       "@type": "OpeningHoursSpecification",
@@ -31,6 +40,22 @@ export function KallistaPage({ language }: { language: "es" | "en" }) {
       closes: "20:00",
     }],
     priceRange: "$$",
+    servesCuisine: ["Café de especialidad", "Desayuno", "Matcha"],
+    contactPoint: {
+      "@type": "ContactPoint",
+      url: language === "en" ? "https://www.kallistacafe.com/en#contacto" : "https://www.kallistacafe.com/#contacto",
+      contactType: "customer service",
+      availableLanguage: ["Spanish", "English"],
+    },
+  };
+  const faqStructuredData = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: content.faq.items.map((item) => ({
+      "@type": "Question",
+      name: item.question,
+      acceptedAnswer: { "@type": "Answer", text: item.answer },
+    })),
   };
 
   return (
@@ -38,6 +63,10 @@ export function KallistaPage({ language }: { language: "es" | "en" }) {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData).replace(/</g, "\\u003c") }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqStructuredData).replace(/</g, "\\u003c") }}
       />
       <div className="topline">
         <span>{content.opening.label}</span>
@@ -85,7 +114,7 @@ export function KallistaPage({ language }: { language: "es" | "en" }) {
           </h1>
           <p className="hero-intro">{content.hero.intro}</p>
           <div className="hero-actions">
-            <a className="button button-dark" href="#menu">
+            <a className="button button-dark" href={language === "en" ? "/en/menu" : "/menu"}>
               {content.hero.ctaPrimary} <span>↓</span>
             </a>
             <a className="text-link" href="#contacto">
@@ -251,7 +280,7 @@ export function KallistaPage({ language }: { language: "es" | "en" }) {
             <h3>{content.events.title.join(" ")}</h3>
             <span>{content.events.description}</span>
           </div>
-          <a href="#eventos">{content.events.cta} <span>↗</span></a>
+          <a href={language === "en" ? "/en/events" : "/eventos"}>{content.events.cta} <span>↗</span></a>
         </article>
       </section>
 
@@ -368,8 +397,4 @@ export function KallistaPage({ language }: { language: "es" | "en" }) {
       </footer>
     </main>
   );
-}
-
-export default function Home() {
-  return <KallistaPage language="es" />;
 }

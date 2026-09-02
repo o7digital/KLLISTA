@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { KallistaPage } from "../page";
+import { KallistaPage } from "../../kallista-page";
 
 export const metadata: Metadata = {
   title: "KALLISTA Café | Coffee Shop in Popotla, CDMX",
@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   ],
   alternates: {
     canonical: "/en",
-    languages: { es: "/", en: "/en" },
+    languages: { "es-MX": "/", en: "/en", "x-default": "/" },
   },
   openGraph: {
     locale: "en_US",
