@@ -30,11 +30,11 @@ export const siteDataEn = {
     kicker: "SOMETHING DELICIOUS FOR YOU", title: ["CHOOSE YOUR", "CRAVING."],
     note: "Drinks with personality, carefully brewed coffee, and something delicious to make the moment complete.",
     items: [
-      { number: "01", name: "PINK CLOUD", detail: "Strawberry · milk · cold foam", price: "$72", className: "sky" },
-      { number: "02", name: "KALLISTA CAFÉ ICED COFFEE", detail: "High-altitude coffee · orange", price: "$68", className: "coffee" },
-      { number: "03", name: "LEMON MATCHA", detail: "Matcha · yellow lemon", price: "$75", className: "matcha" },
+      { number: "01", name: "AMERICANO", detail: "Freshly brewed coffee", price: "$50", className: "sky" },
+      { number: "02", name: "ICED LATTE", detail: "House specialty", price: "$95", className: "coffee" },
+      { number: "03", name: "MATCHA LATTE", detail: "Matcha · milk", price: "$85", className: "matcha" },
     ],
-    footnote: "* Menu, products, and prices are illustrative. Final information coming soon.",
+    footnote: "Explore the full menu for crêpes, waffles, breakfast, salads, baguettes, drinks, and kids’ options.",
   },
   place: {
     kicker: "QUALITY TIME", title: ["A PLACE TO", "ENJOY", "YOUR TIME"],

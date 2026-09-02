@@ -30,11 +30,11 @@ export const siteData = {
     kicker: "ALGO RICO PARA TI", title: ["ELIGE TU", "ANTOJO."],
     note: "Bebidas con personalidad, café bien hecho y algo delicioso para acompañar tu momento.",
     items: [
-      { number: "01", name: "NUBE ROSA", detail: "Fresa · leche · espuma fría", price: "$72", className: "sky" },
-      { number: "02", name: "CAFÉ FRÍO DE KALLISTA CAFÉ", detail: "Café de altura · naranja", price: "$68", className: "coffee" },
-      { number: "03", name: "MATCHA LIMÓN", detail: "Matcha · limón amarillo", price: "$75", className: "matcha" },
+      { number: "01", name: "CAFÉ AMERICANO", detail: "Café recién preparado", price: "$50", className: "sky" },
+      { number: "02", name: "LATTE HELADO", detail: "Especial de la casa", price: "$95", className: "coffee" },
+      { number: "03", name: "MATCHA LATTE", detail: "Matcha · leche", price: "$85", className: "matcha" },
     ],
-    footnote: "* Menú, productos y precios ilustrativos. Información final próximamente.",
+    footnote: "Consulta el menú completo para descubrir crepas, waffles, desayunos, ensaladas, baguettes, bebidas y opciones infantiles.",
   },
   place: {
     kicker: "TIEMPO DE CALIDAD", title: ["UN LUGAR PARA", "DISFRUTAR", "TU TIEMPO"],

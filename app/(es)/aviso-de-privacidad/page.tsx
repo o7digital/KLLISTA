@@ -23,13 +23,14 @@ export default function PrivacyNotice() {
         <div className="legal-intro">
           <p className="kicker">INFORMACIÓN Y TRANSPARENCIA</p>
           <h1>AVISO DE<br /><i>PRIVACIDAD.</i></h1>
-          <p>Última actualización: 24 de agosto de 2026</p>
+          <p>Última actualización: 2 de septiembre de 2026</p>
         </div>
 
         <div className="legal-content">
           <section>
             <h2>1. Identidad y domicilio del responsable</h2>
-            <p><strong>KALLISTA CAFÉ</strong>, con domicilio en Mar Negro 204, Popotla, Miguel Hidalgo, Ciudad de México, es responsable del tratamiento y protección de los datos personales que, en su caso, recabe de las personas usuarias, visitantes y clientes.</p>
+            <p><strong>FERNANDO CHAVEZ OTAÑEZ</strong>, persona física que opera bajo el nombre comercial <strong>KALLISTA CAFÉ</strong>, con domicilio en Calle Londres 161, Local 45, colonia Juárez, alcaldía Cuauhtémoc, código postal 06600, Ciudad de México, es responsable del tratamiento y protección de los datos personales que, en su caso, recabe de las personas usuarias, visitantes y clientes.</p>
+            <p>El establecimiento KALLISTA CAFÉ se ubica en Mar Negro 204, colonia Popotla, alcaldía Miguel Hidalgo, Ciudad de México. Esta dirección comercial es distinta del domicilio del responsable indicado anteriormente.</p>
             <p>Este aviso se emite conforme a la Ley Federal de Protección de Datos Personales en Posesión de los Particulares, su Reglamento y demás disposiciones mexicanas aplicables.</p>
           </section>
 
@@ -71,7 +72,7 @@ export default function PrivacyNotice() {
           <section>
             <h2>7. Derechos ARCO y revocación del consentimiento</h2>
             <p>La persona titular puede solicitar acceso, rectificación, cancelación u oposición al tratamiento de sus datos, así como revocar su consentimiento o limitar el uso y divulgación de su información.</p>
-            <p>La solicitud deberá presentarse por escrito en Mar Negro 204, Popotla, Miguel Hidalgo, Ciudad de México, dirigida a <strong>Responsable de Datos Personales — KALLISTA CAFÉ</strong>, e incluir:</p>
+            <p>La solicitud deberá presentarse por escrito en Calle Londres 161, Local 45, colonia Juárez, alcaldía Cuauhtémoc, código postal 06600, Ciudad de México, dirigida a <strong>FERNANDO CHAVEZ OTAÑEZ — Responsable de Datos Personales de KALLISTA CAFÉ</strong>, e incluir:</p>
             <ul>
               <li>Nombre y un medio para recibir notificaciones.</li>
               <li>Documento que acredite identidad y, en su caso, representación.</li>

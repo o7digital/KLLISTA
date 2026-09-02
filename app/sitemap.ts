@@ -21,7 +21,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     }),
     {
       url: `${origin}/aviso-de-privacidad`,
-      lastModified: new Date("2026-08-24"),
+      lastModified,
       changeFrequency: "yearly",
       priority: 0.2,
     },
