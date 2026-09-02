@@ -54,13 +54,13 @@ export default function PrivacyNotice() {
           <section>
             <h2>4. Cookies y tecnologías similares</h2>
             <p>El sitio puede utilizar cookies estrictamente necesarias o tecnologías técnicas similares para su funcionamiento, seguridad, entrega de contenido y conservación de preferencias básicas. El proveedor de alojamiento puede generar registros técnicos indispensables para prestar y proteger el servicio.</p>
-            <p>A la fecha de este aviso no utilizamos cookies publicitarias ni elaboramos perfiles de comportamiento con fines comerciales. Si en el futuro se incorporan herramientas de analítica, publicidad o cookies no esenciales, este aviso y los mecanismos de consentimiento serán actualizados antes de su uso.</p>
-            <p>Las cookies pueden eliminarse o bloquearse desde la configuración del navegador. El bloqueo de cookies estrictamente necesarias podría afectar algunas funciones del sitio.</p>
+            <p>Con el consentimiento de la persona usuaria, utilizamos Google Analytics 4 para obtener estadísticas agregadas sobre el uso del sitio, como páginas visitadas, duración aproximada de la sesión, tipo de dispositivo, navegador y ubicación geográfica aproximada. Esta herramienta puede colocar cookies como <code>_ga</code> y transmitir datos técnicos a Google LLC. No usamos estos datos para identificar directamente a las personas ni con fines de publicidad personalizada.</p>
+            <p>Google Analytics permanece desactivado mientras no se acepte expresamente su uso. La decisión puede modificarse mediante el enlace «Configurar cookies» disponible en el sitio. También es posible eliminar o bloquear las cookies desde la configuración del navegador. Rechazar las cookies analíticas no impide utilizar el sitio.</p>
           </section>
 
           <section>
             <h2>5. Transferencias y encargados</h2>
-            <p>KALLISTA CAFÉ no vende datos personales. La información podrá ser tratada por proveedores que presten servicios de alojamiento, infraestructura tecnológica o soporte, únicamente bajo instrucciones de KALLISTA CAFÉ y con obligaciones de confidencialidad y seguridad. También podrá comunicarse a autoridades competentes cuando exista una obligación legal o un requerimiento debidamente fundado.</p>
+            <p>KALLISTA CAFÉ no vende datos personales. La información podrá ser tratada por proveedores que presten servicios de alojamiento, formularios, infraestructura tecnológica, soporte o medición de audiencia, incluidos Google LLC como proveedor de Google Analytics y los proveedores que operan el alojamiento, el formulario y el asistente de atención. Estos proveedores tratarán la información para prestar sus servicios y conforme a sus condiciones y obligaciones aplicables. También podrá comunicarse a autoridades competentes cuando exista una obligación legal o un requerimiento debidamente fundado.</p>
             <p>No se realizarán transferencias adicionales que requieran consentimiento sin informarlo previamente y, cuando corresponda, obtener dicho consentimiento.</p>
           </section>
 
