@@ -203,6 +203,12 @@ export function KallistaPage({ language }: { language: "es" | "en" }) {
           imageAlt={content.menu.imageAlt}
           previousLabel={content.menu.previousLabel}
           nextLabel={content.menu.nextLabel}
+          openLabel={content.menu.openLabel}
+          lightboxLabel={content.menu.lightboxLabel}
+          closeLabel={content.menu.closeLabel}
+          zoomInLabel={content.menu.zoomInLabel}
+          zoomOutLabel={content.menu.zoomOutLabel}
+          resetZoomLabel={content.menu.resetZoomLabel}
         />
         <p className="mockup-note">{content.menu.footnote}</p>
       </section>

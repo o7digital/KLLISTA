@@ -47,6 +47,12 @@ export function DetailPage({ language, kind }: { language: "es" | "en"; kind: De
           imageAlt={data.menu.imageAlt}
           previousLabel={data.menu.previousLabel}
           nextLabel={data.menu.nextLabel}
+          openLabel={data.menu.openLabel}
+          lightboxLabel={data.menu.lightboxLabel}
+          closeLabel={data.menu.closeLabel}
+          zoomInLabel={data.menu.zoomInLabel}
+          zoomOutLabel={data.menu.zoomOutLabel}
+          resetZoomLabel={data.menu.resetZoomLabel}
         />}
         {kind === "experience" && <div className="detail-features">{data.place.perks.map((perk) => <span key={perk.label}><b aria-hidden="true">{perk.icon}</b>{perk.label}</span>)}</div>}
         {kind === "events" && <div className="detail-notice"><strong>{data.events.status}</strong><p>{data.events.description}</p></div>}

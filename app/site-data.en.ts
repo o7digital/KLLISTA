@@ -33,6 +33,12 @@ export const siteDataEn = {
     imageAlt: "Dish or drink served at KALLISTA Café, photo",
     previousLabel: "View previous photo",
     nextLabel: "View next photo",
+    openLabel: "Enlarge photo",
+    lightboxLabel: "KALLISTA Café food and drinks gallery",
+    closeLabel: "Close gallery",
+    zoomInLabel: "Zoom in",
+    zoomOutLabel: "Zoom out",
+    resetZoomLabel: "Reset zoom",
     footnote: "Explore the full menu for crêpes, waffles, breakfast, salads, baguettes, drinks, and kids’ options.",
   },
   place: {

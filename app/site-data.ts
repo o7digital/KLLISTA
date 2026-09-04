@@ -33,6 +33,12 @@ export const siteData = {
     imageAlt: "Platillo o bebida servido en KALLISTA Café, foto",
     previousLabel: "Ver la foto anterior",
     nextLabel: "Ver la foto siguiente",
+    openLabel: "Ampliar la foto",
+    lightboxLabel: "Galería de platillos y bebidas de KALLISTA Café",
+    closeLabel: "Cerrar la galería",
+    zoomInLabel: "Acercar la imagen",
+    zoomOutLabel: "Alejar la imagen",
+    resetZoomLabel: "Restablecer el zoom",
     footnote: "Consulta el menú completo para descubrir crepas, waffles, desayunos, ensaladas, baguettes, bebidas y opciones infantiles.",
   },
   place: {
