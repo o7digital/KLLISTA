@@ -10,7 +10,7 @@ const MAX_ZOOM = 3;
 const ZOOM_STEP = 0.25;
 const photoNumbers = [1, 10, 11, 17, 18, 20, 21, 24, 25] as const;
 const photos = photoNumbers.map(
-  (number) => `/slider/photo-${String(number).padStart(2, "0")}.jpeg`,
+  (number) => `/slider/photo-${String(number).padStart(2, "0")}.webp`,
 );
 
 type MenuPhotoSliderProps = {
