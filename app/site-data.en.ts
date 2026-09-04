@@ -29,11 +29,10 @@ export const siteDataEn = {
   menu: {
     kicker: "SOMETHING DELICIOUS FOR YOU", title: ["CHOOSE YOUR", "CRAVING."],
     note: "Drinks with personality, carefully brewed coffee, and something delicious to make the moment complete.",
-    items: [
-      { number: "01", name: "AMERICANO", detail: "Freshly brewed coffee", price: "$50", className: "sky" },
-      { number: "02", name: "ICED LATTE", detail: "House specialty", price: "$95", className: "coffee" },
-      { number: "03", name: "MATCHA LATTE", detail: "Matcha · milk", price: "$85", className: "matcha" },
-    ],
+    sliderLabel: "Photos of KALLISTA Café dishes and drinks",
+    imageAlt: "Dish or drink served at KALLISTA Café, photo",
+    previousLabel: "View previous photo",
+    nextLabel: "View next photo",
     footnote: "Explore the full menu for crêpes, waffles, breakfast, salads, baguettes, drinks, and kids’ options.",
   },
   place: {
@@ -50,9 +49,11 @@ export const siteDataEn = {
     kicker: "WHERE THE COMMUNITY MEETS", title: ["EVENTS AT", "KALLISTA CAFÉ"], status: "COMING SOON", shortStatus: "SOON",
     description: "We are preparing gatherings where we can share, discover, and have a great time together.", cta: "VIEW UPCOMING EVENTS",
   },
-  club: {
-    brand: "KALLISTA CAFÉ\nCLUB", subtitle: "A GROWING\nCOMMUNITY", note: "FOR REGULARS · FRIENDS · EVENTS",
-    member: "COMING SOON", tagline: "COME FOR THE COFFEE.\nCOME BACK FOR THE PEOPLE.",
+  wifi: {
+    kicker: "COMPLIMENTARY WI-FI", title: "GET ONLINE.",
+    body: "Scan the QR code with your phone camera to connect to our Wi-Fi.",
+    networkLabel: "NETWORK", network: "INFINITUM23B1", note: "AVAILABLE DURING YOUR VISIT",
+    imageAlt: "QR code to connect to KALLISTA Café Wi-Fi",
   },
   visit: {
     kicker: "LET'S TALK", title: ["GET IN", "TOUCH."], area: "Mar Negro 204, Popotla",

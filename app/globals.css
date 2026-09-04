@@ -21,9 +21,7 @@
 .detail-lead { max-width: 760px; font-size: clamp(1.2rem, 2.5vw, 1.8rem); line-height: 1.45; }
 .detail-content { display: grid; gap: 3rem; }
 .detail-content > p { max-width: 760px; font-size: 1.05rem; line-height: 1.75; }
-.detail-content .menu-grid { margin-top: 0; }
-.detail-content .menu-card { min-height: 360px; }
-.detail-content .menu-info h2 { font-size: 1.35rem; }
+.detail-content .photo-slider { width: 100%; }
 .detail-features { display: grid; grid-template-columns: repeat(5, 1fr); border: 1px solid currentColor; }
 .detail-features span { min-height: 150px; padding: 1.5rem; display: flex; flex-direction: column; justify-content: space-between; font-weight: 800; border-right: 1px solid currentColor; }
 .detail-features span:last-child { border-right: 0; }
@@ -638,139 +636,98 @@ h2 i {
   line-height: 1.55;
 }
 
-.menu-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
+.photo-slider {
+  width: 100%;
+}
+
+.photo-slider-viewport {
+  width: 100%;
+  overflow-x: auto;
+  overscroll-behavior-inline: contain;
+  scrollbar-width: none;
+  scroll-snap-type: x mandatory;
+}
+
+.photo-slider-viewport::-webkit-scrollbar {
+  display: none;
+}
+
+.photo-slider-track {
+  display: flex;
   gap: 16px;
 }
 
-.menu-card {
-  min-height: 540px;
-  padding: 24px;
+.photo-slide {
   position: relative;
+  min-width: 0;
+  flex: 0 0 calc((100% - 32px) / 3);
+  aspect-ratio: 4 / 3;
+  margin: 0;
   overflow: hidden;
   border: 1px solid var(--ink);
-  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  background: var(--pale-blue);
+  scroll-snap-align: start;
 }
 
-.menu-card:hover,
-.menu-card:focus-within {
-  transform: translateY(-8px) rotate(-0.4deg);
-  box-shadow: 9px 9px 0 var(--ink);
+.photo-slide img {
+  object-fit: cover;
+  transition: transform 0.6s ease;
 }
 
-.menu-card.sky {
-  background: var(--sky);
+.photo-slide:hover img {
+  transform: scale(1.025);
 }
 
-.menu-card.coffee {
-  background: var(--navy);
-  color: var(--cream);
+.photo-slider-controls {
+  min-height: 62px;
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  align-items: center;
+  gap: 22px;
+  border-bottom: 1px solid var(--ink);
 }
 
-.menu-card.matcha {
-  background: var(--paper);
-  background-image: radial-gradient(rgba(13, 27, 42, 0.12) 1px, transparent 1px);
-  background-size: 14px 14px;
-}
-
-.menu-top {
-  display: flex;
-  justify-content: space-between;
-  font-size: 11px;
+.photo-slider-controls > span {
+  min-width: 54px;
+  font-size: 10px;
   font-weight: 900;
+  letter-spacing: 0.1em;
 }
 
-.menu-plus {
-  width: 27px;
-  height: 27px;
-  display: grid;
-  place-items: center;
-  border: 1px solid currentColor;
-  border-radius: 50%;
-  font-size: 17px;
+.photo-slider-progress {
+  height: 2px;
+  overflow: hidden;
+  background: rgba(28, 28, 28, 0.18);
 }
 
-.drink {
-  position: absolute;
-  top: 75px;
-  left: 50%;
-  width: 190px;
-  transform: translateX(-50%) rotate(-4deg);
-  filter: drop-shadow(18px 22px 16px rgba(30, 23, 21, 0.23));
+.photo-slider-progress i {
+  display: block;
+  height: 100%;
+  background: var(--blue);
+  transition: width 0.35s ease;
 }
 
-.cup-lid {
-  height: 22px;
-  margin-inline: 9px;
-  background: rgba(255, 255, 255, 0.8);
-  border-radius: 9px 9px 4px 4px;
-  border: 2px solid rgba(30, 23, 21, 0.6);
+.photo-slider-buttons {
+  display: flex;
+  align-self: stretch;
 }
 
-.cup-body {
-  height: 250px;
-  display: grid;
-  place-items: center;
-  clip-path: polygon(5% 0, 95% 0, 82% 100%, 18% 100%);
-  background: linear-gradient(90deg, rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0.3));
-  border-top: 2px solid rgba(30, 23, 21, 0.6);
+.photo-slider-buttons button {
+  width: 62px;
+  padding: 0;
+  border: 0;
+  border-left: 1px solid var(--ink);
+  background: transparent;
+  color: var(--ink);
+  font-size: 20px;
+  cursor: pointer;
+  transition: background 0.2s ease, color 0.2s ease;
 }
 
-.sky .cup-body {
-  background: linear-gradient(90deg, rgba(255, 255, 255, 0.82), rgba(53, 108, 141, 0.38));
-}
-
-.coffee .cup-body {
-  background: linear-gradient(90deg, rgba(28, 28, 28, 0.82), rgba(53, 108, 141, 0.7));
-}
-
-.matcha .cup-body {
-  background: linear-gradient(90deg, rgba(255, 255, 255, 0.86), rgba(169, 199, 217, 0.62));
-}
-
-.cup-body span {
-  width: 68px;
-  height: 68px;
-  display: grid;
-  place-items: center;
-  background: var(--ink);
-  color: white;
-  border-radius: 50%;
-  font-size: 41px;
-  font-weight: 950;
-  letter-spacing: -0.1em;
-}
-
-.menu-info {
-  position: absolute;
-  left: 24px;
-  right: 24px;
-  bottom: 22px;
-}
-
-.menu-info h3 {
-  max-width: 250px;
-  margin: 0 0 7px;
-  font-size: 31px;
-  line-height: 0.93;
-  font-weight: 950;
-  letter-spacing: -0.06em;
-  text-transform: uppercase;
-}
-
-.menu-info p {
-  margin: 0;
-  font-size: 12px;
-  font-weight: 700;
-}
-
-.menu-info strong {
-  position: absolute;
-  right: 0;
-  bottom: 0;
-  font-size: 27px;
-  font-weight: 950;
+.photo-slider-buttons button:hover,
+.photo-slider-buttons button:focus-visible {
+  background: var(--navy);
+  color: var(--paper);
 }
 
 .mockup-note {
@@ -833,87 +790,87 @@ h2 i {
   font-size: 15px;
 }
 
-.loyalty-card {
-  min-height: 400px;
-  padding: 36px;
+.wifi-card {
+  min-height: 430px;
+  padding: 32px;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(210px, 0.92fr);
+  align-items: center;
+  gap: 26px;
   color: var(--ink);
   background: var(--pale-blue);
   border-radius: 24px;
   box-shadow: 15px 15px 0 var(--sky);
   transform: rotate(3deg);
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
 }
 
-.loyalty-head {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  gap: 16px;
+.wifi-card-copy {
+  min-width: 0;
 }
 
-.loyalty-head span {
-  font-size: 47px;
+.wifi-card-kicker {
+  display: block;
+  margin-bottom: 18px;
+  color: var(--blue);
+  font-size: 9px;
+  font-weight: 900;
+  letter-spacing: 0.13em;
+}
+
+.wifi-card h3 {
+  margin: 0;
+  font-family: var(--serif);
+  font-size: clamp(43px, 4vw, 62px);
   font-weight: 950;
-  line-height: 0.8;
-  letter-spacing: -0.08em;
-  white-space: pre-line;
+  line-height: 0.86;
+  letter-spacing: -0.065em;
 }
 
-.loyalty-head small {
-  text-align: right;
-  font-size: 9px;
+.wifi-card-copy > p {
+  margin: 24px 0;
+  font-size: 13px;
+  line-height: 1.55;
+}
+
+.wifi-network {
+  padding-top: 14px;
+  display: grid;
+  gap: 5px;
+  border-top: 1px solid rgba(13, 27, 42, 0.28);
+}
+
+.wifi-network span,
+.wifi-card-note {
+  font-size: 8px;
   font-weight: 900;
-  line-height: 1.2;
   letter-spacing: 0.12em;
-  white-space: pre-line;
 }
 
-.loyalty-card > p {
-  margin: 25px 0 10px;
-  font-size: 10px;
-  font-weight: 900;
-  letter-spacing: 0.1em;
+.wifi-network strong {
+  overflow-wrap: anywhere;
+  font-size: 15px;
+  letter-spacing: 0.03em;
 }
 
-.stamps {
-  display: grid;
-  grid-template-columns: repeat(6, 1fr);
-  gap: 10px;
-}
-
-.stamps span {
+.wifi-qr {
+  position: relative;
+  width: 100%;
   aspect-ratio: 1;
-  display: grid;
-  place-items: center;
-  border: 2px dashed var(--ink);
-  border-radius: 50%;
-  font-size: 24px;
-}
-
-.stamps span:nth-child(-n + 3) {
+  overflow: hidden;
   background: var(--paper);
-  transform: rotate(-7deg);
+  border: 1px solid rgba(13, 27, 42, 0.2);
+  border-radius: 18px;
+  box-shadow: 7px 7px 0 var(--navy);
 }
 
-.loyalty-foot {
-  display: flex;
-  justify-content: space-between;
-  align-items: end;
-  gap: 16px;
-  margin-top: 35px;
-  font-size: 9px;
-  font-weight: 900;
-  letter-spacing: 0.08em;
+.wifi-qr img {
+  object-fit: contain;
 }
 
-.loyalty-foot strong {
-  text-align: right;
-  font-size: 17px;
-  line-height: 0.9;
-  letter-spacing: -0.03em;
-  white-space: pre-line;
+.wifi-card-note {
+  grid-column: 1 / -1;
+  padding-top: 16px;
+  border-top: 1px solid rgba(13, 27, 42, 0.28);
 }
 
 .events-section {
@@ -1620,12 +1577,8 @@ h2 i {
     min-height: 430px;
   }
 
-  .menu-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .menu-card {
-    min-height: 500px;
+  .photo-slide {
+    flex-basis: 100%;
   }
 
   .spot-inner {
@@ -1646,8 +1599,8 @@ h2 i {
     width: max-content;
   }
 
-  .loyalty-card {
-    min-height: 360px;
+  .wifi-card {
+    min-height: 420px;
   }
 
   .visit {
@@ -1754,10 +1707,6 @@ h2 i {
     font-size: 57px;
   }
 
-  .menu-card {
-    min-height: 470px;
-  }
-
   .about-section {
     padding-block: 72px;
   }
@@ -1807,23 +1756,26 @@ h2 i {
     text-align: center;
   }
 
-  .loyalty-card {
-    min-height: 330px;
+  .wifi-card {
+    min-height: 0;
     padding: 24px;
+    grid-template-columns: 1fr;
+    gap: 24px;
     transform: none;
     box-shadow: 8px 8px 0 var(--blue);
   }
 
-  .loyalty-head span {
-    font-size: 36px;
+  .wifi-card h3 {
+    font-size: 47px;
   }
 
-  .stamps {
-    gap: 4px;
+  .wifi-qr {
+    width: min(260px, 100%);
+    justify-self: center;
   }
 
-  .stamps span {
-    font-size: 17px;
+  .wifi-card-note {
+    text-align: center;
   }
 
   .visit-details {

@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { MenuPhotoSlider } from "./menu-photo-slider";
 import { MobileMenu } from "./mobile-menu";
 import { siteData } from "./site-data";
 import { siteDataEn } from "./site-data.en";
@@ -197,27 +198,12 @@ export function KallistaPage({ language }: { language: "es" | "en" }) {
           <p className="section-note">{content.menu.note}</p>
         </div>
 
-        <div className="menu-grid">
-          {content.menu.items.map((item) => (
-            <article className={`menu-card ${item.className}`} key={item.name}>
-              <div className="menu-top">
-                <span>{item.number}</span>
-                <span className="menu-plus">+</span>
-              </div>
-              <div className="drink" aria-hidden="true">
-                <div className="cup-lid" />
-                <div className="cup-body">
-                  <span>K</span>
-                </div>
-              </div>
-              <div className="menu-info">
-                <h3>{item.name}</h3>
-                <p>{item.detail}</p>
-                <strong>{item.price}</strong>
-              </div>
-            </article>
-          ))}
-        </div>
+        <MenuPhotoSlider
+          label={content.menu.sliderLabel}
+          imageAlt={content.menu.imageAlt}
+          previousLabel={content.menu.previousLabel}
+          nextLabel={content.menu.nextLabel}
+        />
         <p className="mockup-note">{content.menu.footnote}</p>
       </section>
 
@@ -239,24 +225,25 @@ export function KallistaPage({ language }: { language: "es" | "en" }) {
             </div>
           </div>
 
-          <div className="loyalty-card">
-            <div className="loyalty-head">
-              <span>{content.club.brand}</span>
-              <small>{content.club.subtitle}</small>
+          <div className="wifi-card">
+            <div className="wifi-card-copy">
+              <span className="wifi-card-kicker">{content.wifi.kicker}</span>
+              <h3>{content.wifi.title}</h3>
+              <p>{content.wifi.body}</p>
+              <div className="wifi-network">
+                <span>{content.wifi.networkLabel}</span>
+                <strong>{content.wifi.network}</strong>
+              </div>
             </div>
-            <p>{content.club.note}</p>
-            <div className="stamps">
-              <span>☕</span>
-              <span>☕</span>
-              <span>☕</span>
-              <span>☕</span>
-              <span>+</span>
-              <span>♡</span>
+            <div className="wifi-qr">
+              <Image
+                fill
+                src="/kallista-wifi-qr.png"
+                alt={content.wifi.imageAlt}
+                sizes="(max-width: 520px) 260px, 280px"
+              />
             </div>
-            <div className="loyalty-foot">
-              <span>{content.club.member}</span>
-              <strong>{content.club.tagline}</strong>
-            </div>
+            <span className="wifi-card-note">{content.wifi.note}</span>
           </div>
         </div>
       </section>

@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import { MenuPhotoSlider } from "./menu-photo-slider";
 import { siteData } from "./site-data";
 import { siteDataEn } from "./site-data.en";
 
@@ -41,12 +42,12 @@ export function DetailPage({ language, kind }: { language: "es" | "en"; kind: De
       </header>
       <section className="detail-content shell">
         <p>{page.body}</p>
-        {kind === "menu" && <div className="menu-grid">{data.menu.items.map((item) => (
-          <article className={`menu-card ${item.className}`} key={item.name}>
-            <div className="menu-top"><span>{item.number}</span><span className="menu-plus">+</span></div>
-            <div className="menu-info"><h2>{item.name}</h2><p>{item.detail}</p><strong>{item.price}</strong></div>
-          </article>
-        ))}</div>}
+        {kind === "menu" && <MenuPhotoSlider
+          label={data.menu.sliderLabel}
+          imageAlt={data.menu.imageAlt}
+          previousLabel={data.menu.previousLabel}
+          nextLabel={data.menu.nextLabel}
+        />}
         {kind === "experience" && <div className="detail-features">{data.place.perks.map((perk) => <span key={perk.label}><b aria-hidden="true">{perk.icon}</b>{perk.label}</span>)}</div>}
         {kind === "events" && <div className="detail-notice"><strong>{data.events.status}</strong><p>{data.events.description}</p></div>}
         <Link className="button button-dark detail-button" href={`${home}#contacto`}>{text.visit} ↗</Link>
